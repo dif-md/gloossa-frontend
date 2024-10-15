@@ -8,6 +8,9 @@ interface Props extends /* @vue-ignore */ PrimitiveProps {
   variant?: ButtonVariants['variant']
   size?: ButtonVariants['size']
   class?: HTMLAttributes['class']
+  buttonText?: string
+  iconComponent?: any
+  iconProps?: Record<string, any> // Добавляем iconProps
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -16,11 +19,10 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <Primitive
-    :as="as"
-    :as-child="asChild"
-    :class="cn(buttonVariants({ variant, size }), props.class)"
-  >
-    <slot />
+  <Primitive :as="as" :as-child="asChild" :class="cn(buttonVariants({ variant, size }), props.class)">
+    <component :is="props.iconComponent" class="mr-2" v-bind="props.iconProps" />
+    <span>
+      {{ buttonText }}
+    </span>
   </Primitive>
 </template>

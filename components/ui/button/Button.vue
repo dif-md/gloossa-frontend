@@ -10,7 +10,7 @@ interface Props extends /* @vue-ignore */ PrimitiveProps {
   class?: HTMLAttributes['class']
   buttonText?: string
   iconComponent?: any
-  iconProps?: Record<string, any> // Добавляем iconProps
+  iconProps?: Record<string, any> 
 }
 
 const props = withDefaults(defineProps<Props>(), {

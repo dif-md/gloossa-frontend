@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-white rounded-xl p-3">
-    <h1 :style="{ color: getTitleColor() }" class="font-medium text-base">
+  <div class="bg-white rounded-xl p-3 align-middle">
+    <h1 :style="{ color: getTitleColor() }" class="font-medium text-base flex items-center">
       {{ title }}
     </h1>
-    <p class="text-slate-500 text-sm">
+    <p class=" mb-3 text-slate-500 text-sm">
       {{ description }}
     </p>
     

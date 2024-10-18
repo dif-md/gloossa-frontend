@@ -49,6 +49,12 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Добавленные цвета
+        orange:'#FED7AA',
+        gray:'#64748B',
+        pink: "#F5157B",
+        default: "#0F172A",
+        brightpink: "#F59BC4",
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
@@ -87,4 +93,4 @@ module.exports = {
     },
   },
   plugins: [animate],
-}
+};

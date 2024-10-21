@@ -1,8 +1,7 @@
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'shadcn-nuxt'
-  ],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+
+
 
   tailwindcss: {
     exposeConfig: true,
@@ -22,5 +21,9 @@ export default defineNuxtConfig({
     ],
   },
 
+  plugins: [
+  ],
+  
+  
   compatibilityDate: '2024-10-14'
-})
+});

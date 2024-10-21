@@ -1,22 +1,29 @@
 <template>
     <div class="bg-slate-500">
-        <Header color="white"/>
+        <Header color="white" />
     </div>
     <div class="bg-slate-200 grid grid-cols-2 gap-3 p-3 justify-between ">
-        <LevelItem v-for="(item) in cards" :title="item.title" :description="item.description"
-            :dotCount="item.dotCount" :filledDots="item.filledDots" />
+        <LevelItem v-for="(item) in cards" :title="item.title" :description="item.description" :dotCount="item.dotCount"
+            :filledDots="item.filledDots" />
     </div>
     <div>
-        <Flag/>
+        <Flag />
     </div>
+
+    <NavBar />
+<DialogMenuSelect />
+
     <div>
-        <AudioPlayer/>
+        <AudioPlayer />
     </div>
     <div class="bg-[#E2E8F0]">
         <WordTranslated />
     </div>
     <div>
-        <DrawerFish/>
+        <RatingFish />
+    </div>
+    <div>
+        <DrawerFish />
     </div>
     <div>
         <CourseFilter />
@@ -28,10 +35,10 @@
         <CatGloossa/>
     </div> -->
     <div class="bg-slate-200">
-        <AboutMe/>
+        <AboutMe />
     </div>
     <div class="bg-slate-200 py-5">
-        <Faq/>
+        <Faq />
     </div>
     <div class="bg-slate-200">
 
@@ -41,8 +48,8 @@
         <ShowMoreButton />
     </div>
 
-   
-  
+
+
 </template>
 
 <script setup>
@@ -58,13 +65,13 @@ import Flag from "~/components/ui/Flag/Flag.vue";
 import AudioPlayer from "~/components/ui/AudioPlayer/AudioPlayer.vue";
 import WordTranslated from "~/components/ui/WordTranslated/WordTranslated.vue";
 import DrawerFish from "~/components/ui/DrawerFish/DrawerFish.vue";
+import RatingFish from "~/components/ui/atingFish/RatingFish.vue";
+import NavBar from "~/components/ui/NavBar/NavBar.vue";
+import DialogMenuSelect from "~/components/ui/DialogMenuSelect/DialogMenuSelect.vue";
 
-const cards = [
-  { title: 'Очень легко', description: 'если хочешь начать с нуля', dotCount: 6, filledDots: 1 },
-  { title: 'Легко', description: 'если уже немного знаешь', dotCount: 6, filledDots: 2 },
-  { title: 'Средне', description: 'если ещё много трудного', dotCount: 6, filledDots: 3 },
-  { title: 'Выше среднего', description: 'если понимаешь речь на слух', dotCount: 6, filledDots: 4 },
-  { title: 'Сложно', description: 'если уже свободно говоришь', dotCount: 6, filledDots: 5 },
-  { title: 'Очень сложно', description: 'бесконечность не предел', dotCount: 6, filledDots: 6 },
-];
+
+
+
+
+
 </script>

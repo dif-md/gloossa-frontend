@@ -13,16 +13,17 @@
     </div>
   </template>
   
-  <script setup>
+  <script setup lang="ts">
   import { ref } from 'vue';
   
-  const filters = ['Все уровни', 'Очень легко', 'Легко', 'Средне', 'Сложно', 'Очень сложно'];
-  const activeFilter = ref(0);
+  const filters: string[] = ['Все уровни', 'Очень легко', 'Легко', 'Средне', 'Сложно', 'Очень сложно'];
+  const activeFilter = ref<number>(0);
   
-  const setActiveFilter = (index) => {
+  const setActiveFilter = (index: number): void => {
     activeFilter.value = index;
   };
   </script>
+  
   
   <style scoped>
   .filter-container {

@@ -2,7 +2,7 @@
     <div class="bg-white p-2 rounded-xl mx-3 relative">
         <div class="rounded-2xl relative">
             <img :src="WolfGoats" alt="" class="rounded-xl w-full">
-            <IconBook class="absolute top-3 right-3 bg-[#FFFFFFD9] p-2 rounded-full" />
+            <IconTypeCourses :svgIcon="IconBook" class="absolute top-3 right-3 bg-[#FFFFFFD9] p-2 rounded-full" />
             <div class="">
                 <DotCount :dotCount="6" :filledDots="3"
                     class="absolute bottom-3 right-3 flex justify-between items-center bg-[#FFFFFFD9] px-3 h-4 rounded-xl " />
@@ -30,8 +30,8 @@
     </div>
 </template>
 <script setup>
-import LevelItem from '../LevelItem/LevelItem.vue';
 import WolfGoats from '@/assets/images/wolf-goats.jpg'
-import IconBook from '../IconBook/IconBook.vue';
+import IconTypeCourses from '../IconTypeCourses/IconTypeCourses.vue';
 import DotCount from '../DotCount/DotCount.vue';
+import IconBook from '../IconBook/IconBook.vue';
 </script>

@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import IconForPalyerPlay from '../IconForPalyer/IconForPlayerPla.vue';
+import IconForPalyerPlay from '../IconForPalyer/IconForPlayerPlay.vue';
 import IconForPalyerStop from '../IconForPalyer/IconForPalyerStop.vue';
 import { ref, onMounted, computed } from 'vue';
 import IconForPlayerBack from '../IconForPalyer/IconForPlayerBack.vue';

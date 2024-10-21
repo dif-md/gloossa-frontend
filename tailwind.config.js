@@ -55,6 +55,7 @@ module.exports = {
         pink: "#F5157B",
         default: "#0F172A",
         brightpink: "#F59BC4",
+        bgColor: '#E7ECF4',
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",

@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="flex justify-start items-center">
+    <div class="">
+        <div class="flex justify-start  items-center align-bottom">
             <span v-for="i in dotCount" :key="i" :class="['dot', i <= filledDots ? 'filled' : '']"
                 :style="{ backgroundColor: getDotColor(i) }"></span>
         </div>

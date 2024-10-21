@@ -5,7 +5,6 @@
     </header>
     <main>
       <div>
-        
         <NuxtPage />
       </div>
     </main>

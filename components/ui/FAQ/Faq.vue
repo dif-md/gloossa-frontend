@@ -22,10 +22,10 @@
       </div>
     </div>
 
-    <div class="mb-2 relative border-b border-gray-300 pb-2 transition-all">
+    <div class=" relative border-b border-gray-300 pb-2 transition-all">
       <div class="cursor-pointer pt-4 rounded text-base font-semibold flex items-center justify-between" @click="toggleAnswer(2)">
         Как происходит обучение?
-        <component :is="isActive[2] ? ArrowTop : ArrowBottom" class="ml-2 inline-block " />
+        <component :is="isActive[2] ? ArrowTop : ArrowBottom" class="ml-2 inline-block" />
       </div>
       <div v-if="isActive[2]" class="pt-4 mt-1 text-sm">
         Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
